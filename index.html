@@ -216,7 +216,7 @@
             }
             //withdrawal specific error checking  
             if(type === "w" ){
-                if(amount < atm.currentAccount.balance){
+                if(amount > atm.currentAccount.balance){
                     val = false; 
                 }
                 //new withdrawal error checking happens here 
